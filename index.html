@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Samira von Randow | Psicóloga e Neuropsicóloga</title>
+<meta name="description" content="Avaliação neuropsicológica para crianças, adolescentes e adultos com Samira von Randow, psicóloga e neuropsicóloga.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#025159">
+<link rel="icon" href="monograma.webp" type="image/webp">
+<link rel="preload" href="cinzel-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="cinzel-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="samira-hero.webp" as="image" type="image/webp">
+<style>
+@font-face{font-family:"Cinzel";font-style:normal;font-weight:400;font-display:swap;src:url(cinzel-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Cinzel";font-style:normal;font-weight:600;font-display:swap;src:url(cinzel-latin-600-normal.woff2) format("woff2")}
+:root{
+  --verde:#025159;
+  --menta:#D2E8E3;
+  --claro:#EEF6F4;
+  --ouro:linear-gradient(115deg,#BFAE5A 0%,#E1D97B 34%,#C4B460 66%,#DCD072 100%);
+  --ouro-s:#C9BA66;
+  --texto:#173d42;
+  --titulo:"Cinzel",Georgia,serif;
+  --corpo:Arial,Helvetica,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:var(--corpo);color:var(--texto);background:var(--claro);line-height:1.7;font-size:17px;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--titulo);font-weight:600;line-height:1.22;letter-spacing:.02em;text-wrap:balance}
+p,li,.resp,.card,.contato strong{text-wrap:pretty}
+.quote,.lead,.final p,.center p{text-wrap:balance}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+section{padding:clamp(64px,9vw,112px) 0;position:relative}
+
+/* superfícies */
+.s-verde{background:var(--verde);color:#fff}
+.s-menta{background:var(--menta)}
+.s-claro{background:var(--claro)}
+.s-verde h2,.s-verde h3{color:#fff}
+.s-menta h2,.s-claro h2,.s-menta h3,.s-claro h3{color:var(--verde)}
+
+/* etiqueta */
+.tag{display:inline-flex;align-items:center;font-family:var(--corpo);font-weight:700;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:18px}
+.s-verde .tag{color:#E1D97B}
+.s-menta .tag,.s-claro .tag{color:var(--verde)}
+h2{font-size:clamp(1.6rem,3.6vw,2.55rem);margin-bottom:22px}
+.lead{font-size:1.08rem;max-width:62ch}
+.s-verde .lead,.s-verde p{color:rgba(255,255,255,.9)}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 30px;border-radius:999px;font-family:var(--corpo);font-weight:700;font-size:1rem;text-decoration:none;transition:transform .25s,box-shadow .25s,background .25s;cursor:pointer;border:0;line-height:1.2;text-align:center}
+.btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.btn-ouro{background:var(--ouro);color:#02363b;box-shadow:0 0 0 4px rgba(201,186,102,.28)}
+.btn-ouro:hover{transform:translateY(-2px);box-shadow:0 0 0 6px rgba(201,186,102,.35)}
+.btn-verde{background:var(--verde);color:#fff;box-shadow:0 0 0 4px rgba(2,81,89,.16)}
+.btn-verde:hover{transform:translateY(-2px);box-shadow:0 0 0 6px rgba(2,81,89,.22)}
+.btn-borda{background:transparent;color:#fff;border:1.5px solid var(--ouro-s);box-shadow:0 0 0 4px rgba(201,186,102,.14)}
+.btn-borda:hover{background:rgba(201,186,102,.14);transform:translateY(-2px)}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* header */
+header{position:fixed;inset:0 0 auto 0;z-index:50;background:rgba(2,81,89,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid rgba(201,186,102,.45)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
+.brand img{width:46px;height:44px;object-fit:contain}
+.brand span{font-family:var(--titulo);font-weight:600;letter-spacing:.08em;font-size:.95rem;color:#E9DF8E;white-space:nowrap}
+.nav .btn{padding:11px 22px;font-size:.92rem;white-space:nowrap}
+
+/* hero */
+.hero{padding:140px 0 clamp(56px,8vw,96px)}
+.hero-grid{display:grid;gap:44px;align-items:center}
+.hero h1{font-size:clamp(1.85rem,4.6vw,3.2rem);color:#fff;margin-bottom:22px}
+.quote{font-style:italic;color:#E9DF8E;font-size:1.05rem;margin-bottom:18px;max-width:46ch}
+.hero .lead{margin-bottom:30px}
+.hero-meta{display:flex;flex-direction:column;gap:4px;margin-top:34px}
+.hero-meta strong{font-family:var(--titulo);font-weight:600;font-size:1.3rem;letter-spacing:.06em;color:#E9DF8E;line-height:1.25}
+.hero-meta span{font-size:1rem;color:#fff}
+.hero-meta small{font-size:.92rem;color:rgba(255,255,255,.8);letter-spacing:.04em}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px}
+
+/* moldura de foto */
+.frame{position:relative;border-radius:28px;background:var(--menta);aspect-ratio:4/5;max-width:470px;width:100%;margin-inline:auto}
+.frame::after{content:"";position:absolute;inset:0;border:1.5px solid var(--ouro-s);border-radius:28px;transform:translate(14px,14px);pointer-events:none;z-index:0}
+.frame .box{position:absolute;inset:0;border-radius:28px;overflow:hidden;background:var(--menta);z-index:1}
+.frame img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.frame.escura .box,.frame.escura{background:var(--verde)}
+.frame.quadrada{aspect-ratio:1/1}
+
+/* split */
+.split{display:grid;gap:48px;align-items:center}
+
+/* pílulas */
+.pills{list-style:none;display:grid;gap:12px;margin:26px 0}
+.pills li{display:flex;align-items:center;gap:14px;background:#F7FBFA;border-radius:999px;padding:14px 22px;box-shadow:0 6px 18px rgba(2,81,89,.07);font-size:.98rem;line-height:1.45}
+.pills li::before{content:"";flex:none;width:11px;height:11px;border-radius:50%;background:var(--ouro);box-shadow:0 0 0 4px rgba(201,186,102,.25)}
+
+/* cards */
+.grid{display:grid;gap:18px}
+.card{border-radius:22px;padding:28px;position:relative}
+.s-verde .card{background:rgba(255,255,255,.06);border:1px solid rgba(201,186,102,.38)}
+.s-menta .card,.s-claro .card{background:#fff;border:1px solid rgba(2,81,89,.12);box-shadow:0 10px 26px rgba(2,81,89,.07)}
+.card h3{font-size:1.08rem;margin-bottom:10px}
+.card p{font-size:.97rem}
+.s-menta .card p,.s-claro .card p{color:var(--texto)}
+.num{font-family:var(--titulo);font-weight:600;font-size:2.3rem;line-height:1;margin-bottom:14px;background:var(--ouro);-webkit-background-clip:text;background-clip:text;color:transparent}
+.s-menta .num{background:none;color:var(--verde);-webkit-text-fill-color:var(--verde)}
+.mini{padding:20px 22px;display:flex;gap:14px;align-items:flex-start;font-size:.98rem;line-height:1.5}
+.mini::before{content:"";flex:none;width:9px;height:9px;margin-top:8px;border-radius:50%;background:var(--ouro)}
+.s-claro .mini{background:#fff}
+
+/* chips */
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 4px}
+.chip{border:1.5px solid var(--ouro-s);border-radius:999px;padding:8px 18px;font-size:.88rem;font-weight:700;letter-spacing:.03em}
+.s-claro .chip,.s-menta .chip{color:var(--verde);background:rgba(255,255,255,.7)}
+.s-verde .chip{color:#fff;background:rgba(255,255,255,.07)}
+
+/* abordagem */
+.abordagem{display:grid;gap:40px;align-items:center}
+.abordagem .selo{width:min(280px,60%);margin-inline:auto;opacity:.96}
+.abordagem p+p{margin-top:16px}
+.abordagem .btn{margin-top:30px}
+
+/* sobre */
+.sobre p{margin-bottom:16px;max-width:60ch}
+
+/* FAQ */
+.faq{max-width:820px;margin:34px auto 0}
+.faq details{background:#fff;border-radius:18px;margin-bottom:12px;border:1px solid rgba(2,81,89,.12);box-shadow:0 6px 16px rgba(2,81,89,.05)}
+.faq summary{list-style:none;cursor:pointer;padding:20px 60px 20px 24px;font-weight:700;color:var(--verde);position:relative;line-height:1.45}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:22px;top:50%;transform:translateY(-50%);width:28px;height:28px;border-radius:50%;background:var(--verde);color:#fff;display:grid;place-items:center;font-size:1.2rem;line-height:1;font-weight:400;transition:transform .25s}
+.faq details[open] summary::after{content:"–"}
+.faq summary:focus-visible{outline:3px solid var(--verde);outline-offset:-3px;border-radius:18px}
+.faq .resp{padding:0 24px 22px;font-size:.99rem}
+.center{text-align:center}
+.center .tag{justify-content:center}
+
+/* CTA final */
+.final{text-align:center}
+.final .selo{width:150px;margin:0 auto 26px}
+.final h2{max-width:20ch;margin-inline:auto}
+.final p{max-width:54ch;margin:0 auto 32px}
+
+/* contato */
+.contatos{display:grid;gap:14px;margin-top:34px}
+.contato{display:flex;flex-direction:column;gap:2px;padding:22px 24px;border:1px solid rgba(201,186,102,.45);border-radius:20px;background:rgba(255,255,255,.05);text-decoration:none;transition:background .25s,transform .25s;overflow-wrap:anywhere}
+.contato:hover{background:rgba(201,186,102,.14);transform:translateY(-2px)}
+.contato small{font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:#E1D97B;font-weight:700}
+.contato strong{font-size:1.02rem;color:#fff;font-weight:700}
+
+/* rodapé */
+footer{background:var(--verde);color:rgba(255,255,255,.88);border-top:1px solid rgba(201,186,102,.5);padding:46px 0 96px;text-align:center;font-size:.9rem}
+footer img{width:210px;margin:0 auto 18px}
+footer p{margin-top:6px}
+footer a{color:#E9DF8E;text-decoration:underline;text-underline-offset:3px}
+.cred{margin-top:18px;font-size:.85rem;opacity:.9}
+
+/* whatsapp flutuante */
+.flutua{position:fixed;right:18px;bottom:18px;z-index:60;transition:opacity .3s,transform .3s}
+.flutua.some{opacity:0;transform:translateY(16px);pointer-events:none}
+
+/* movimento */
+.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.js .reveal.in{opacity:1;transform:none}
+.js .reveal.d1{transition-delay:.1s}.js .reveal.d2{transition-delay:.2s}.js .reveal.d3{transition-delay:.3s}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .reveal{opacity:1;transform:none;transition:none}
+  .btn,.contato,.flutua{transition:none}
+}
+
+/* breakpoints */
+@media (min-width:640px){
+  .grid.g2{grid-template-columns:repeat(2,1fr)}
+  .grid.g3{grid-template-columns:repeat(2,1fr)}
+  .contatos{grid-template-columns:repeat(2,1fr)}
+}
+@media (min-width:900px){
+  .hero-grid{grid-template-columns:1.1fr .9fr;gap:64px}
+  .split{grid-template-columns:.9fr 1.1fr;gap:72px}
+  .split.inv{grid-template-columns:1.1fr .9fr}
+  .abordagem{grid-template-columns:1.25fr .75fr}
+  .grid.g3{grid-template-columns:repeat(3,1fr)}
+  .grid.g5{grid-template-columns:repeat(6,1fr)}
+  .grid.g5 .card{grid-column:span 2}
+  .grid.g5 .card:nth-child(4){grid-column:2 / span 2}
+  .grid.g5 .card:nth-child(5){grid-column:4 / span 2}
+  .contatos{grid-template-columns:repeat(4,1fr)}
+  .pills li{border-radius:999px}
+}
+@media (max-width:480px){
+  body{font-size:16px}
+  .brand span{display:none}
+  .nav .btn{padding:10px 18px;font-size:.88rem}
+  .hero{padding-top:118px}
+  .btn{width:100%}
+  .nav .btn{width:auto}
+  .flutua{right:14px;bottom:14px}
+  .frame::after{transform:translate(9px,9px)}
+  .wrap{width:min(1120px,100% - 34px)}
+}
+
+
+/* hero no celular/tablet: foto em tela cheia no topo, com degradê até o verde e texto por cima */
+@media (max-width:899px){
+  .hero{padding:72px 0 56px}
+  .hero-grid{gap:0}
+  .hero .frame{order:-1;width:100vw;max-width:none;margin-left:calc(50% - 50vw);margin-right:0;border-radius:0;aspect-ratio:auto;height:min(122vw,720px);background:var(--menta)}
+  .hero .frame .box{border-radius:0}
+  .hero .frame img{object-position:center top}
+  .hero .frame::after{inset:auto 0 0 0;height:58%;border:0;border-radius:0;transform:none;background:linear-gradient(to bottom,rgba(2,81,89,0) 0%,rgba(2,81,89,.72) 55%,#025159 92%);z-index:2}
+  .hero-grid>div:first-child{position:relative;z-index:3;margin-top:-120px;text-align:center}
+  .hero .tag{justify-content:center}
+  .hero .quote,.hero .lead{margin-inline:auto}
+  .hero .cta-row{justify-content:center}
+  .hero-meta{align-items:center}
+}
+
+/* quando procurar: pílulas em grade, com pulsação (só roda quando visível) */
+.pills-grid{margin:34px 0 36px}
+@keyframes pulsaPonto{0%{box-shadow:0 0 0 0 rgba(201,186,102,.65);transform:scale(1)}70%{box-shadow:0 0 0 11px rgba(201,186,102,0);transform:scale(1.18)}100%{box-shadow:0 0 0 0 rgba(201,186,102,0);transform:scale(1)}}
+@keyframes pulsaPilula{0%,100%{transform:scale(1);box-shadow:0 6px 18px rgba(2,81,89,.07),0 0 0 0 rgba(201,186,102,0)}50%{transform:scale(1.02);box-shadow:0 12px 28px rgba(2,81,89,.13),0 0 0 3px rgba(201,186,102,.38)}}
+.js .pills li{animation:pulsaPilula 3.4s ease-in-out infinite;animation-play-state:paused}
+.js .pills li::before{animation:pulsaPonto 2.1s ease-out infinite;animation-play-state:paused}
+.js .pills.vivo li,.js .pills.vivo li::before{animation-play-state:running}
+.pills li:nth-child(2),.pills li:nth-child(2)::before{animation-delay:.35s}
+.pills li:nth-child(3),.pills li:nth-child(3)::before{animation-delay:.7s}
+.pills li:nth-child(4),.pills li:nth-child(4)::before{animation-delay:1.05s}
+.pills li:nth-child(5),.pills li:nth-child(5)::before{animation-delay:1.4s}
+.pills li:nth-child(6),.pills li:nth-child(6)::before{animation-delay:1.75s}
+@media (min-width:760px){.pills-grid{grid-template-columns:repeat(2,1fr);gap:16px 18px}}
+@media (prefers-reduced-motion:reduce){.js .pills li,.js .pills li::before{animation:none}}
+
+/* botões pulsando (anel que se expande + respiração leve); só roda quando o botão está na tela */
+.btn{position:relative;--pulso:rgba(201,186,102,.6)}
+.btn-verde{--pulso:rgba(2,81,89,.5)}
+.btn::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none}
+@keyframes anelBtn{0%{box-shadow:0 0 0 0 var(--pulso)}80%,100%{box-shadow:0 0 0 17px rgba(0,0,0,0)}}
+@keyframes respiraBtn{0%,100%{scale:1}50%{scale:1.035}}
+.js .btn{animation:respiraBtn 2.2s ease-in-out infinite;animation-play-state:paused}
+.js .btn::after{animation:anelBtn 2.2s ease-out infinite;animation-play-state:paused}
+.js .btn.vivo,.js .btn.vivo::after{animation-play-state:running}
+.cta-centro{display:flex;justify-content:center}
+@media (max-width:480px){@keyframes anelBtn{0%{box-shadow:0 0 0 0 var(--pulso)}80%,100%{box-shadow:0 0 0 11px rgba(0,0,0,0)}}}
+@media (prefers-reduced-motion:reduce){.js .btn,.js .btn::after{animation:none}}
+
+/* Para quem: chips pulsando + carrossel flutuante (um entra, outro sai) */
+.carrossel{margin-top:34px;overflow:hidden;padding:12px 0 18px;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 7%,#000 93%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 7%,#000 93%,transparent 100%)}
+.trilho{display:flex;width:max-content}
+.trilho .card{align-items:center;flex:none;width:300px;margin-right:18px;box-shadow:0 10px 26px rgba(2,81,89,.09)}
+@keyframes flutuaTrilho{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.js .trilho{animation:flutuaTrilho 50s linear infinite;animation-play-state:paused}
+.js .carrossel.vivo .trilho{animation-play-state:running}
+.js .carrossel:hover .trilho{animation-play-state:paused}
+@keyframes pulsaChip{0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(201,186,102,.55)}50%{transform:scale(1.06);box-shadow:0 0 0 9px rgba(201,186,102,0)}}
+.js .chip{animation:pulsaChip 2.4s ease-in-out infinite;animation-play-state:paused}
+.js .chips.vivo .chip{animation-play-state:running}
+.js .chips .chip:nth-child(2){animation-delay:.3s}.js .chips .chip:nth-child(3){animation-delay:.6s}
+@media (max-width:640px){.trilho .card{width:248px;margin-right:14px}.js .trilho{animation-duration:42s}}
+@media (prefers-reduced-motion:reduce){
+  .js .trilho,.js .chip{animation:none}
+  .carrossel{overflow-x:auto;-webkit-mask-image:none;mask-image:none}
+  .trilho .card[aria-hidden="true"]{display:none}
+}
+
+/* 3 carrosséis: direita→esquerda, esquerda→direita, direita→esquerda */
+.carrosseis{margin-top:26px}
+.carrosseis .carrossel{margin-top:0;padding:8px 0}
+@keyframes flutuaTrilho{from{transform:translateX(0)}to{transform:translateX(-25%)}}
+.js .trilho{animation-duration:34s;animation-direction:normal}
+.js .c2 .trilho{animation-direction:reverse;animation-duration:38s}
+.js .c3 .trilho{animation-duration:42s}
+@media (max-width:640px){.js .trilho{animation-duration:26s}.js .c2 .trilho{animation-duration:30s}.js .c3 .trilho{animation-duration:34s}}
+@media (prefers-reduced-motion:reduce){.carrosseis .trilho .card[aria-hidden="true"]{display:none}}
+/* Avaliação: foto em cima, texto embaixo, botão no meio */
+#avaliacao .abordagem{grid-template-columns:1fr;justify-items:center;text-align:center;gap:34px}
+#avaliacao .abordagem .frame{order:-1;width:min(360px,80%)}
+#avaliacao .abordagem>div:not(.frame){max-width:640px}
+#avaliacao .abordagem .btn{margin-top:30px}
+
+/* Como funciona: cantos assimétricos, número em círculo verde pulsando */
+#como-funciona .card{border-radius:0 32px 0 32px;display:grid;grid-template-columns:auto 1fr;column-gap:16px;row-gap:14px;align-items:center;align-content:start}
+#como-funciona .num{width:50px;height:50px;margin:0;border-radius:50%;display:grid;place-items:center;background:var(--verde);color:#fff;-webkit-text-fill-color:#fff;font-size:1.15rem;letter-spacing:.02em}
+#como-funciona .card h3{margin:0}
+#como-funciona .card p{grid-column:1 / -1}
+@keyframes pulsaNum{0%{box-shadow:0 0 0 0 rgba(2,81,89,.55);transform:scale(1)}70%{box-shadow:0 0 0 14px rgba(2,81,89,0);transform:scale(1.08)}100%{box-shadow:0 0 0 0 rgba(2,81,89,0);transform:scale(1)}}
+.js #como-funciona .num{animation:pulsaNum 2.2s ease-out infinite;animation-play-state:paused}
+.js #como-funciona .grid.vivo .num{animation-play-state:running}
+.js #como-funciona .card:nth-child(2) .num{animation-delay:.25s}.js #como-funciona .card:nth-child(3) .num{animation-delay:.5s}.js #como-funciona .card:nth-child(4) .num{animation-delay:.75s}.js #como-funciona .card:nth-child(5) .num{animation-delay:1s}
+@media (prefers-reduced-motion:reduce){.js #como-funciona .num{animation:none}}
+
+/* Como funciona: o card vem para a frente só quando recebe mouse ou toque */
+.js #como-funciona .card{transition:opacity .8s ease,transform .8s ease,translate .3s ease,scale .3s ease,box-shadow .3s ease;transition-delay:0s,0s,0s,0s,0s}
+.js #como-funciona .card.d1{transition-delay:.1s,.1s,0s,0s,0s}
+.js #como-funciona .card.d2{transition-delay:.2s,.2s,0s,0s,0s}
+@media (hover:hover){#como-funciona .card:hover{translate:0 -10px;scale:1.04;z-index:2;box-shadow:0 24px 44px rgba(2,81,89,.2)}}
+#como-funciona .card.toque{translate:0 -10px;scale:1.04;z-index:2;box-shadow:0 24px 44px rgba(2,81,89,.2)}
+@media (prefers-reduced-motion:reduce){#como-funciona .card{transition:none !important}#como-funciona .card:hover,#como-funciona .card.toque{translate:none;scale:none}}
+
+/* Benefícios: bolinhas pulsando + borda dourada mais grossa com brilho percorrendo o contorno */
+@property --ang{syntax:"<angle>";inherits:false;initial-value:0deg}
+#beneficios .card{border:2px solid rgba(201,186,102,.42)}
+#beneficios .card::after{content:"";position:absolute;inset:-2px;padding:2px;border-radius:inherit;pointer-events:none;
+  background:conic-gradient(from var(--ang),rgba(225,217,123,0) 0deg,rgba(225,217,123,0) 232deg,#C4B460 292deg,#F4EDA0 330deg,rgba(225,217,123,0) 360deg);
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0)}
+@keyframes giraBorda{to{--ang:360deg}}
+.js #beneficios .card::after{animation:giraBorda 5s linear infinite;animation-play-state:paused}
+.js #beneficios .card:nth-child(2)::after{animation-delay:-1s}.js #beneficios .card:nth-child(3)::after{animation-delay:-2s}.js #beneficios .card:nth-child(4)::after{animation-delay:-3s}.js #beneficios .card:nth-child(5)::after{animation-delay:-4s}
+.js #beneficios .card::before{animation:pulsaPonto 2.1s ease-out infinite;animation-play-state:paused}
+.js #beneficios .card:nth-child(2)::before{animation-delay:.3s}.js #beneficios .card:nth-child(3)::before{animation-delay:.6s}.js #beneficios .card:nth-child(4)::before{animation-delay:.9s}.js #beneficios .card:nth-child(5)::before{animation-delay:1.2s}
+.js #beneficios .grid.vivo .card::after,.js #beneficios .grid.vivo .card::before{animation-play-state:running}
+@media (prefers-reduced-motion:reduce){.js #beneficios .card::after,.js #beneficios .card::before{animation:none}}
+
+/* Sobre: foto em cima no mobile + faixa dourada com palavras em movimento */
+#sobre{padding-bottom:0}
+.faixa{margin-top:clamp(48px,7vw,80px);overflow:hidden;background:var(--ouro);padding:17px 0}
+.faixa-trilho{display:flex;align-items:center;width:max-content}
+.faixa-trilho span{font-family:var(--titulo);font-weight:600;font-size:.98rem;letter-spacing:.14em;text-transform:uppercase;color:var(--verde);white-space:nowrap}
+.faixa-trilho i{flex:none;width:0;height:0;margin:0 clamp(22px,3vw,40px);border-left:11px solid var(--verde);border-top:7px solid transparent;border-bottom:7px solid transparent}
+@keyframes correFaixa{from{transform:translateX(0)}to{transform:translateX(-25%)}}
+.js .faixa-trilho{animation:correFaixa 30s linear infinite;animation-play-state:paused}
+.js .faixa.vivo .faixa-trilho{animation-play-state:running}
+@media (max-width:899px){#sobre .frame{order:-1}.js .faixa-trilho{animation-duration:24s}.faixa-trilho span{font-size:.86rem}}
+@media (prefers-reduced-motion:reduce){.js .faixa-trilho{animation:none}.faixa{overflow-x:auto}.faixa-trilho span[aria-hidden="true"]{display:none}.faixa-trilho span[aria-hidden="true"]+i{display:none}}
+
+/* Contato: cards pulsando */
+@keyframes pulsaContato{0%,100%{scale:1;box-shadow:0 0 0 0 rgba(201,186,102,0)}50%{scale:1.025;box-shadow:0 0 0 8px rgba(201,186,102,.2)}}
+.js .contato{animation:pulsaContato 2.8s ease-in-out infinite;animation-play-state:paused}
+.js .contatos.vivo .contato{animation-play-state:running}
+.js .contato:nth-child(2){animation-delay:.35s}.js .contato:nth-child(3){animation-delay:.7s}.js .contato:nth-child(4){animation-delay:1.05s}
+@media (prefers-reduced-motion:reduce){.js .contato{animation:none}}
+
+/* WhatsApp flutuante: foto dela + balão de conversa */
+.flutua .zap{display:flex;align-items:center;gap:14px;text-decoration:none}
+.zap-balao{position:relative;max-width:230px;padding:13px 16px;border-radius:18px 18px 4px 18px;background:#fff;color:var(--verde);font-size:.9rem;line-height:1.35;box-shadow:0 12px 30px rgba(0,0,0,.28)}
+.zap-balao b{display:block;font-size:.98rem}
+.zap-balao::after{content:"";position:absolute;right:-7px;bottom:12px;width:16px;height:16px;background:#fff;transform:rotate(45deg);border-radius:0 0 4px 0}
+.zap-foto{position:relative;flex:none;width:64px;height:64px;border-radius:50%;border:3px solid #25D366;background:var(--menta);box-shadow:0 10px 26px rgba(0,0,0,.3)}
+.zap-foto img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block}
+.zap-foto svg{position:absolute;right:-6px;bottom:-4px;width:26px;height:26px;padding:4px;border-radius:50%;background:#25D366;border:2px solid #fff;box-sizing:border-box}
+@keyframes anelZap{0%{box-shadow:0 0 0 0 rgba(37,211,102,.65),0 10px 26px rgba(0,0,0,.3)}80%,100%{box-shadow:0 0 0 16px rgba(37,211,102,0),0 10px 26px rgba(0,0,0,.3)}}
+.js .zap-foto{animation:anelZap 2.2s ease-out infinite}
+.flutua .zap:hover .zap-balao{transform:translateY(-2px)}
+.zap-balao{transition:transform .25s}
+@media (max-width:480px){.zap-balao{max-width:188px;font-size:.82rem;padding:11px 13px}.zap-foto{width:56px;height:56px}}
+@media (prefers-reduced-motion:reduce){.js .zap-foto{animation:none}}
+@media (min-width:900px){.hero-meta{width:fit-content;align-items:center}}
+
+/* balão menor */
+.flutua .zap{gap:10px}
+.zap-balao{max-width:168px;padding:9px 12px;border-radius:14px 14px 3px 14px;font-size:.78rem;line-height:1.3}
+.zap-balao b{font-size:.84rem}
+.zap-balao::after{width:12px;height:12px;right:-5px;bottom:9px}
+.zap-foto{width:52px;height:52px;border-width:2.5px}
+.zap-foto svg{width:22px;height:22px;padding:3px;right:-5px;bottom:-3px}
+@media (max-width:480px){.zap-balao{max-width:148px;font-size:.74rem;padding:8px 10px}.zap-balao b{font-size:.8rem}.zap-foto{width:46px;height:46px}}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#topo" aria-label="Samira von Randow, início">
+      <img src="monograma.webp" width="46" height="44" alt="">
+      <span>SAMIRA VON RANDOW</span>
+    </a>
+    <a class="btn btn-ouro" href="https://wa.me/5598988293510?text=Ol%C3%A1%2C%20Samira!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20neuropsicol%C3%B3gica." target="_blank" rel="noopener">Agendar avaliação</a>
+  </div>
+</header>
+
+<main id="topo">
+
+<!-- HERO -->
+<section class="s-verde hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="tag">Avaliação Neuropsicológica</span>
+      <p class="quote">Cada pessoa aprende, sente e se comporta de um jeito&nbsp;próprio.</p>
+      <h1>Entenda como o cérebro funciona e como isso aparece no dia a&nbsp;dia</h1>
+      <p class="lead">Para crianças, adolescentes e adultos. Um processo especializado que identifica pontos fortes e dificuldades e traz diretrizes claras para intervenções&nbsp;eficazes.</p>
+      <div class="cta-row">
+        <a class="btn btn-ouro" href="https://wa.me/5598988293510?text=Ol%C3%A1%2C%20Samira!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20neuropsicol%C3%B3gica." target="_blank" rel="noopener">Agendar minha avaliação</a>
+      </div>
+      <div class="hero-meta">
+        <strong>Samira von Randow</strong>
+        <span>Psicóloga e Neuropsicóloga</span>
+        <small>CRP 22/00330</small>
+      </div>
+    </div>
+    <div class="frame">
+      <div class="box"><img src="samira-hero.webp" width="820" height="1093" alt="Samira von Randow, psicóloga e neuropsicóloga, sorrindo" fetchpriority="high"></div>
+    </div>
+  </div>
+</section>
+
+<!-- QUANDO PROCURAR -->
+<section class="s-menta" id="quando-procurar">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="tag">Quando procurar</span>
+      <h2>Alguns sinais merecem um olhar mais&nbsp;atento</h2>
+      <p class="lead">A avaliação neuropsicológica pode ajudar a entender o que está por trás de situações como&nbsp;estas:</p>
+    </div>
+    <ul class="pills pills-grid" id="pilulas">
+        <li>Atraso de fala ou dificuldade de&nbsp;comunicação</li>
+        <li>Agitação, impulsividade ou dificuldade de seguir&nbsp;regras</li>
+        <li>Problemas de aprendizagem</li>
+        <li>Irritabilidade frequente</li>
+        <li>Dificuldades de socialização</li>
+        <li>Queixas emocionais ou mudanças de&nbsp;comportamento</li>
+      </ul>
+    <div class="cta-centro"><a class="btn btn-verde" href="https://wa.me/5598988293510?text=Ol%C3%A1%2C%20Samira!%20Gostaria%20de%20conversar%20sobre%20uma%20avalia%C3%A7%C3%A3o%20neuropsicol%C3%B3gica." target="_blank" rel="noopener">Quero conversar com a Samira</a></div>
+  </div>
+</section>
+
+<!-- O QUE É -->
+<section class="s-verde" id="avaliacao">
+  <div class="wrap abordagem">
+    <div class="frame reveal d2">
+      <div class="box"><img src="samira-em-pe.webp" width="760" height="1074" alt="Samira von Randow em pé, com as mãos entrelaçadas" loading="lazy"></div>
+    </div>
+    <div class="reveal">
+      <span class="tag">A avaliação</span>
+      <h2>O que é a avaliação neuropsicológica?</h2>
+      <p>É um processo especializado que investiga como o cérebro funciona e como isso impacta o comportamento, as emoções, a aprendizagem e o desempenho no dia a&nbsp;dia.</p>
+      <p>A avaliação identifica pontos fortes e dificuldades e fornece diretrizes claras para intervenções&nbsp;eficazes.</p>
+      <a class="btn btn-borda" href="https://wa.me/5598988293510?text=Ol%C3%A1%2C%20Samira!%20Gostaria%20de%20saber%20mais%20sobre%20a%20avalia%C3%A7%C3%A3o%20neuropsicol%C3%B3gica." target="_blank" rel="noopener">Quero saber mais</a>
+    </div>
+  </div>
+</section>
+
+<!-- PARA QUEM -->
+<section class="s-claro" id="para-quem">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="tag">Para quem é indicada</span>
+      <h2>Um processo para diferentes fases da&nbsp;vida</h2>
+      <div class="chips"><span class="chip">Crianças</span><span class="chip">Adolescentes</span><span class="chip">Adultos</span></div>
+    </div>
+  </div>
+  <div class="carrosseis" aria-label="Queixas atendidas">
+    <div class="carrossel c1"><div class="trilho"><div class="card mini">Dificuldades de aprendizagem</div><div class="card mini">Atraso de fala ou&nbsp;linguagem</div><div class="card mini">Dificuldade de atenção e&nbsp;concentração</div><div class="card mini" aria-hidden="true">Dificuldades de aprendizagem</div><div class="card mini" aria-hidden="true">Atraso de fala ou&nbsp;linguagem</div><div class="card mini" aria-hidden="true">Dificuldade de atenção e&nbsp;concentração</div><div class="card mini" aria-hidden="true">Dificuldades de aprendizagem</div><div class="card mini" aria-hidden="true">Atraso de fala ou&nbsp;linguagem</div><div class="card mini" aria-hidden="true">Dificuldade de atenção e&nbsp;concentração</div><div class="card mini" aria-hidden="true">Dificuldades de aprendizagem</div><div class="card mini" aria-hidden="true">Atraso de fala ou&nbsp;linguagem</div><div class="card mini" aria-hidden="true">Dificuldade de atenção e&nbsp;concentração</div></div></div>
+    <div class="carrossel c2"><div class="trilho"><div class="card mini">Suspeita de TDAH, TOD,&nbsp;TEA</div><div class="card mini">Problemas de memória</div><div class="card mini">Irritabilidade, impulsividade ou desregulação&nbsp;emocional</div><div class="card mini" aria-hidden="true">Suspeita de TDAH, TOD,&nbsp;TEA</div><div class="card mini" aria-hidden="true">Problemas de memória</div><div class="card mini" aria-hidden="true">Irritabilidade, impulsividade ou desregulação&nbsp;emocional</div><div class="card mini" aria-hidden="true">Suspeita de TDAH, TOD,&nbsp;TEA</div><div class="card mini" aria-hidden="true">Problemas de memória</div><div class="card mini" aria-hidden="true">Irritabilidade, impulsividade ou desregulação&nbsp;emocional</div><div class="card mini" aria-hidden="true">Suspeita de TDAH, TOD,&nbsp;TEA</div><div class="card mini" aria-hidden="true">Problemas de memória</div><div class="card mini" aria-hidden="true">Irritabilidade, impulsividade ou desregulação&nbsp;emocional</div></div></div>
+    <div class="carrossel c3"><div class="trilho"><div class="card mini">Queixas escolares</div><div class="card mini">Baixo rendimento acadêmico</div><div class="card mini">Dificuldades de comportamento</div><div class="card mini" aria-hidden="true">Queixas escolares</div><div class="card mini" aria-hidden="true">Baixo rendimento acadêmico</div><div class="card mini" aria-hidden="true">Dificuldades de comportamento</div><div class="card mini" aria-hidden="true">Queixas escolares</div><div class="card mini" aria-hidden="true">Baixo rendimento acadêmico</div><div class="card mini" aria-hidden="true">Dificuldades de comportamento</div><div class="card mini" aria-hidden="true">Queixas escolares</div><div class="card mini" aria-hidden="true">Baixo rendimento acadêmico</div><div class="card mini" aria-hidden="true">Dificuldades de comportamento</div></div></div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="s-menta" id="como-funciona">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="tag">Como funciona</span>
+      <h2>O processo em cinco&nbsp;etapas</h2>
+      <p class="lead">Da primeira conversa à entrega do relatório, cada etapa tem um objetivo&nbsp;claro.</p>
+    </div>
+    <div class="grid g5" style="margin-top:36px">
+      <div class="card reveal"><div class="num">01</div><h3>Entrevista inicial</h3><p>Anamnese: compreensão da queixa e do histórico do desenvolvimento. Coleta da história clínica, escolar e&nbsp;comportamental.</p></div>
+      <div class="card reveal d1"><div class="num">02</div><h3>Sessões de avaliação</h3><p>Aplicação de testes padronizados e atividades lúdicas, com análise&nbsp;comportamental.</p></div>
+      <div class="card reveal d2"><div class="num">03</div><h3>Análise dos resultados</h3><p>Interpretação detalhada do perfil cognitivo e&nbsp;comportamental.</p></div>
+      <div class="card reveal"><div class="num">04</div><h3>Devolutiva</h3><p>Explicação clara dos achados e orientação à família e/ou&nbsp;escola.</p></div>
+      <div class="card reveal d1"><div class="num">05</div><h3>Entrega do relatório</h3><p>Documento completo com resultados, diagnóstico (se aplicável) e recomendações&nbsp;práticas.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFÍCIOS -->
+<section class="s-verde" id="beneficios">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="tag">Benefícios</span>
+      <h2>O que a avaliação&nbsp;traz</h2>
+    </div>
+    <div class="grid g3 g5" style="margin-top:34px">
+      <div class="card mini reveal">Compreensão profunda do funcionamento&nbsp;cognitivo</div>
+      <div class="card mini reveal d1">Identificação de transtornos do&nbsp;neurodesenvolvimento</div>
+      <div class="card mini reveal d2">Orientações assertivas para escola e&nbsp;família</div>
+      <div class="card mini reveal">Plano de intervenção&nbsp;individualizado</div>
+      <div class="card mini reveal d1">Facilita encaminhamentos para terapia&nbsp;adequada</div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="s-claro" id="sobre">
+  <div class="wrap split inv">
+    <div class="sobre reveal">
+      <span class="tag">Sobre a Samira</span>
+      <h2>Samira von Randow</h2>
+      <p>Sou psicóloga e neuropsicóloga. Minha trajetória na Psicologia nasceu de um propósito: ajudar pessoas a compreenderem a mente e transformarem suas&nbsp;vidas.</p>
+      <p>Trabalho com avaliação neuropsicológica para crianças, adolescentes e adultos, com um olhar cuidadoso e explicações claras em cada etapa do&nbsp;processo.</p>
+      <p>Acredito que a busca constante por conhecimento e atualização profissional aprimora a prática e permite oferecer avaliações cada vez mais qualificadas e&nbsp;cuidadosas.</p>
+    </div>
+    <div class="frame quadrada reveal d1">
+      <div class="box"><img src="samira-cerebro.webp" width="900" height="900" alt="Samira von Randow segurando um modelo anatômico de cérebro" loading="lazy" style="object-position:center"></div>
+    </div>
+  </div>
+  <div class="faixa" role="list" aria-label="Psicóloga, Neuropsicóloga, CRP 22/00330, congressos e jornadas de atualização">
+    <div class="faixa-trilho"><span>Psicóloga</span><i aria-hidden="true"></i><span>Neuropsicóloga</span><i aria-hidden="true"></i><span>CRP 22/00330</span><i aria-hidden="true"></i><span>Congressos e jornadas de&nbsp;atualização</span><i aria-hidden="true"></i><span aria-hidden="true">Psicóloga</span><i aria-hidden="true"></i><span aria-hidden="true">Neuropsicóloga</span><i aria-hidden="true"></i><span aria-hidden="true">CRP 22/00330</span><i aria-hidden="true"></i><span aria-hidden="true">Congressos e jornadas de&nbsp;atualização</span><i aria-hidden="true"></i><span aria-hidden="true">Psicóloga</span><i aria-hidden="true"></i><span aria-hidden="true">Neuropsicóloga</span><i aria-hidden="true"></i><span aria-hidden="true">CRP 22/00330</span><i aria-hidden="true"></i><span aria-hidden="true">Congressos e jornadas de&nbsp;atualização</span><i aria-hidden="true"></i><span aria-hidden="true">Psicóloga</span><i aria-hidden="true"></i><span aria-hidden="true">Neuropsicóloga</span><i aria-hidden="true"></i><span aria-hidden="true">CRP 22/00330</span><i aria-hidden="true"></i><span aria-hidden="true">Congressos e jornadas de&nbsp;atualização</span><i aria-hidden="true"></i></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="s-menta" id="duvidas">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="tag">Dúvidas frequentes</span>
+      <h2>Perguntas frequentes</h2>
+    </div>
+    <div class="faq reveal">
+      <details>
+        <summary>Para quem é indicada a avaliação&nbsp;neuropsicológica?</summary>
+        <div class="resp">Para crianças, adolescentes e adultos que apresentam, por exemplo, dificuldades de aprendizagem, de atenção e concentração, atraso de fala ou linguagem, problemas de memória, desregulação emocional ou dificuldades de&nbsp;comportamento.</div>
+      </details>
+      <details>
+        <summary>Como funciona o&nbsp;processo?</summary>
+        <div class="resp">O processo tem cinco etapas: entrevista inicial (anamnese), sessões de avaliação, análise dos resultados, devolutiva e entrega do&nbsp;relatório.</div>
+      </details>
+      <details>
+        <summary>O que acontece nas sessões de&nbsp;avaliação?</summary>
+        <div class="resp">São aplicados testes padronizados e atividades lúdicas, que permitem analisar o comportamento e o funcionamento&nbsp;cognitivo.</div>
+      </details>
+      <details>
+        <summary>O que eu recebo no&nbsp;final?</summary>
+        <div class="resp">Um relatório completo com resultados, diagnóstico (se aplicável) e recomendações práticas. Antes disso, acontece a devolutiva, com explicação clara dos achados e orientação à família e/ou&nbsp;escola.</div>
+      </details>
+      <details>
+        <summary>Como posso começar?</summary>
+        <div class="resp">É só chamar a Samira pelo WhatsApp. O primeiro passo é a entrevista inicial, para compreender a queixa e o&nbsp;histórico.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="s-verde final">
+  <div class="wrap reveal">
+    <img class="selo" src="selo.webp" width="560" height="559" alt="" loading="lazy">
+    <h2>Entender é o primeiro&nbsp;passo</h2>
+    <p>Se você ou alguém da sua família precisa de uma avaliação neuropsicológica, fale com a Samira pelo&nbsp;WhatsApp.</p>
+    <a class="btn btn-ouro" href="https://wa.me/5598988293510?text=Ol%C3%A1%2C%20Samira!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20neuropsicol%C3%B3gica." target="_blank" rel="noopener">Agendar minha avaliação</a>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section class="s-verde" id="contato" style="padding-top:0">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="tag">Contato</span>
+      <h2>Fale com a&nbsp;Samira</h2>
+    </div>
+    <div class="contatos">
+      <a class="contato reveal" href="https://wa.me/5598988293510" target="_blank" rel="noopener"><small>WhatsApp</small><strong>(98) 98829-3510</strong></a>
+      <a class="contato reveal d1" href="https://www.instagram.com/psi.samiravonrandow/" target="_blank" rel="noopener"><small>Instagram</small><strong>@psi.samiravonrandow</strong></a>
+      <a class="contato reveal d2" href="mailto:samira.integrar@gmail.com"><small>E-mail</small><strong>samira.integrar@gmail.com</strong></a>
+      <a class="contato reveal d3" href="https://www.google.com.br/maps/place/Atrium+Plaza/@-2.4982452,-44.2911525,17z" target="_blank" rel="noopener"><small>Localização</small><strong>Ver no mapa</strong></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="logo-horizontal.webp" width="210" height="112" alt="Samira von Randow, Psicóloga e Neuropsicóloga" loading="lazy">
+    <p>Psicóloga | Neuropsicóloga · CRP&nbsp;22/00330</p>
+    <p>© <span id="ano">2026</span> Samira von Randow. Todos os direitos&nbsp;reservados.</p>
+    <p class="cred">Site por <a href="https://www.instagram.com/melri_siragusa/" target="_blank" rel="noopener">Melri Siragusa Designer</a></p>
+  </div>
+</footer>
+
+<div class="flutua" id="flutua">
+  <a class="zap" href="https://wa.me/5598988293510?text=Ol%C3%A1%2C%20Samira!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20neuropsicol%C3%B3gica." target="_blank" rel="noopener" aria-label="Oi, tudo bem? Fale com a Samira pelo WhatsApp">
+    <span class="zap-balao"><b>Oi, tudo bem?</b> Fale com a Samira pelo&nbsp;WhatsApp</span>
+    <span class="zap-foto"><img src="samira-avatar.webp" width="160" height="160" alt="" loading="lazy"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.25-1.4A9.9 9.9 0 1 0 12.04 2Zm5.8 14.1c-.25.7-1.4 1.35-1.95 1.4-.5.05-1.1.07-1.8-.12-.4-.13-.95-.3-1.6-.6-2.8-1.2-4.6-4-4.75-4.2-.14-.2-1.15-1.5-1.15-2.9s.72-2.06 1-2.35c.25-.28.55-.35.74-.35h.53c.17 0 .4-.06.62.48l.85 2.05c.07.15.1.3.02.48l-.28.43-.4.45c-.13.13-.27.28-.12.55.16.27.7 1.15 1.5 1.86 1.03.92 1.9 1.2 2.17 1.33.27.14.43.12.6-.07.15-.2.7-.8.88-1.08.18-.27.37-.22.62-.13l1.95.92c.27.13.45.2.5.3.07.1.07.65-.18 1.3Z"/></svg></span>
+  </a>
+</div>
+
+<script>
+(function(){
+  document.getElementById('ano').textContent=new Date().getFullYear();
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+    els.forEach(function(el){io.observe(el)});
+    var bt=new IntersectionObserver(function(es){es.forEach(function(e){e.target.classList.toggle('vivo',e.isIntersecting)})},{threshold:.1});
+    document.querySelectorAll('.btn,.chips,.carrossel,.faixa,.contatos,#como-funciona .grid,#beneficios .grid').forEach(function(b){bt.observe(b)});
+    var pl=document.getElementById('pilulas');
+    if(pl){new IntersectionObserver(function(es){pl.classList.toggle('vivo',es[0].isIntersecting)},{threshold:.1}).observe(pl)}
+    var f=document.querySelector('footer'),fl=document.getElementById('flutua');
+    new IntersectionObserver(function(es){fl.classList.toggle('some',es[0].isIntersecting)}).observe(f);
+  }else{els.forEach(function(el){el.classList.add('in')});var q=document.getElementById('pilulas');if(q)q.classList.add('vivo');document.querySelectorAll('.btn,.chips,.carrossel,.faixa,.contatos,#como-funciona .grid,#beneficios .grid').forEach(function(b){b.classList.add('vivo')})}
+  document.querySelectorAll('#como-funciona .card').forEach(function(c){var t;
+    c.addEventListener('pointerdown',function(e){if(e.pointerType==='mouse')return;clearTimeout(t);c.classList.add('toque')});
+    ['pointerup','pointercancel','pointerleave'].forEach(function(n){c.addEventListener(n,function(e){if(e.pointerType==='mouse')return;clearTimeout(t);t=setTimeout(function(){c.classList.remove('toque')},450)})});
+  });
+})();
+</script>
+</body>
+</html>
